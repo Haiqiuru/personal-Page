@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Qiuru Hai</title>
+  <style>
+    /* 全局字体动态调整 */
+    body {
+      font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      margin: 20px;
+      line-height: 1.6;
+      color: black;
+      font-size: clamp(14px, 1.4vw, 18px);
+      background:#d1dbb7a3;
+    }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 36px);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(18px, 2.5vw, 28px);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: clamp(16px, 2vw, 22px);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p,
+    li {
+      font-size: clamp(14px, 1.4vw, 18px);
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* 图片大小动态调整 */
+    img {
+      margin-top: 40px;
+      width: clamp(100px, 20vw, 180px);
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .hero {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .hero-left {
+      flex: 0 0 auto;
+    }
+
+    .hero-right {
+      flex: 1;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px
+    }
+
+    .chip {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #c9c8c0aa;
+      border: 1px solid #000000;
+      font-size: clamp(12px, 1vw, 16px);
+      color: #000000
+    }
+
+    .underline {
+      text-decoration: underline;
+      text-decoration-color: rgb(0, 0, 0);
+      text-decoration-thickness: 1px;
+    }
+
+    /* 小屏幕适配 */
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero-left {
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        color: #000000;
+        font-size: clamp(18px, 2.5vw, 28px);
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero">
+    <div class="hero-left">
+      <img src="./27041755582704_.pic_hd.jpg" alt="profile">
+    </div>
+    <div class="hero-right">
+      <h1>Qiuru Hai | 海秋茹</h1>
+      <p class="subtitle"> Ph.D.| BJUT · Beijing, China</p>
+      <p> 📮: <a href="mailto:hai97072021@163.com">hai97072021@163.com</a></p>
+      <div class="chips">
+        <span class="chip">multi-view learning</span>
+        <span class="chip">weakly supervised learning</span>
+        <span class="chip">contrastive learning</span>
+      </div>
+      <p>I am currently pursuing a Ph.D. degree at Beijing University of Technology(BJUT), under the supervision of
+        Professors <a href="https://cs.bjut.edu.cn/info/1407/2612.htm">Zhen Yang</a> and <a
+          href="https://gengyulyu.github.io/homepage/">Gengyu Lyu</a>. My research interests mainly include multi-view
+        learning, weakly supervised
+        learning, and contrastive learning.</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D., Computer Science and Technology, Beijing University of Technology, 2023-2027 (expected). </li>
+      <li>M.E., Computer Application Technology, Beijing Wuzi University, 2020-2023. </li>
+      <li>B.E., Internet of Things Engineering, Henan University of Engineering, 2015-2019. </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <ul>
+      <li><span class="underline">Qiuru Hai</span>, Yongjian Deng, Yuena Lin, Zheng Li, Zhen Yang, Gengyu Lyu. <a
+          href="https://ojs.aaai.org/index.php/AAAI/article/view/33869">CFDM: Contrastive Fusion and Disambiguation for
+          Multi-View Partial-Label learning</a>[C]. AAAI Conference on Artificial Intelligence (AAAI), 2025:
+        17005-17013.<span class="highlight"> (CCF A)</span></li>
+      <li>Fei Xue, <span class="underline">Qiuru Hai</span>, Tingting Dong, Zhihua Cui, Yuelu Gong. <a
+          href="https://www.sciencedirect.com/science/article/abs/pii/S0020025522006727">A deep reinforcement learning
+          based hybrid algorithm for efficient resource scheduling in edge computing environment</a>[J]. Information
+        Sciences(INS), 2022, 608: 362-374.<span class="highlight"> (CCF B)</span></li>
+      <li>Fei Xue, <span class="underline">Qiuru Hai</span>, Yuelu Gong, Siqing You, Yang Cao, Hengliang Tang. <a
+          href="https://www.inderscienceonline.com/doi/abs/10.1504/IJBIC.2022.126288">RVEA-based multi-objective
+          workflow scheduling in cloud environments</a>[J]. International Journal of Bio-Inspired Computation(IJBIC),
+        2022, 20(1): 49-57.<span class="highlight"> (JCR Q1)</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>News</h2>
+    <ul>
+      <li>2025.04: One paper has been published by AAAI 2025.</li>
+    </ul>
+  </section>
+
+</body>
+
+</html>
